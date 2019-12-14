@@ -1,10 +1,9 @@
 <form id="form" action="javascript:">
     <h1>Лабораторная работа</h1>
-    <label>Введите натуральное число:</label>
     <% product_array = Product.all.map {|prod| [prod.title, prod.id]} %>
     <%= select_tag(:id_1, options_for_select(product_array), :class => 'browser-default custom-select') %>
     <%= select_tag(:id_2, options_for_select(product_array), :class => 'browser-default custom-select') %>
-    <input type="submit" class = "btn btn-primary" value="Найти палиндром"/>
+    <input type="submit" class = "btn btn-primary" value="Найти рецепты"/>
 </form>
   <table id="table" style="display:none" class="table table-hover">
     <tr>

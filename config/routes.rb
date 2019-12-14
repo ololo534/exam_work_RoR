@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  get 'map/map'
   get '/main' => 'main#new'
   root 'main#new'
 

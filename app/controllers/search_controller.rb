@@ -12,8 +12,6 @@ class SearchController < ApplicationController
     @recipes1.each_with_index do |rec, i|
       rec.recipe_id == @recipes2[i].recipe_id ? @result.push(Recipe.find(rec.recipe_id)) : @result.push(0)
     end
-    respond_to do |format|
-      format.json { render json: { solution: @result } }
-    end
+    respond_to { |format| format.json { render json: { solution: @result } } }
   end
 end
