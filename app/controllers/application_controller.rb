@@ -7,4 +7,8 @@ class ApplicationController < ActionController::Base
   def authorize
     redirect_to '/login' unless current_user
   end
+
+  def deny_access_to_authorized
+    redirect_to '/main' if current_user
+  end
 end

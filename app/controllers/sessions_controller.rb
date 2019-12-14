@@ -1,4 +1,5 @@
 class SessionsController < ApplicationController
+  before_action :deny_access_to_authorized, only: %i[new create]
   def new; end
 
   def create
