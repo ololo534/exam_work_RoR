@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get '/main' => 'main#new'
+  get 'contact' => 'main#contact'
   root 'main#new'
 
   get 'search/ajax'
