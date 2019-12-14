@@ -1,0 +1,39 @@
+<main role="main">
+<!-- Contact -->
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">
+      <strong>Название:</strong>
+      <%= @recipe.title %></h1>
+  </div>
+</div>
+<div class="container">
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="col-md-3">
+      <h2>Продукты</h2>
+      <p><table class="table">
+      <tr>
+        <th>Продукты</th>
+        <th>Количество</th>
+      </tr>
+      <% @product.each_with_index do |prod, i| %>
+        <tr>
+          <td>
+            <%= prod.title %>
+          </td>
+          <td>
+            <%= @specifications[i].count %>
+          </td>
+        </tr>
+      <% end %>
+    </table></p>
+    </div>
+    <div class="col-md-9">
+      <h2>Что делать</h2>
+      <p><%= @recipe.text %></p>
+    </div>
+  </div>
+  <hr>
+</div>
+</main>

@@ -1,0 +1,10 @@
+<%= form_for :user, url: '/user' do |f| %>
+  <h1>Быстрая регистрация</h1>
+  <label for="user_name"></label><input type="text" name="user[name]" id="user_name" placeholder="Имя пользователя"/>
+  <label for="user_email"></label><input type="text" name="user[email]" id="user_email" placeholder="e-mail"/>
+  <label for="user_password"></label><input type="password" name="user[password]" id="user_password" placeholder="Пароль" />
+  <label for="user_password_confirmation"></label>
+  <input type="password" name="user[password_confirmation]" id="user_password_confirmation" placeholder="Подтверждение пароля"/>
+  <input type="submit" name="commit" value="Зарегистрироваться" class = "btn btn-primary" data-disable-with="Попытка регистрации"/><br /><br />
+  <a href="/login">Назад</a>
+<% end %>
