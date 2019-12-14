@@ -1,0 +1,22 @@
+%main{:role => "main"}
+  .jumbotron
+    .container
+      %h1.display-3 Выберите 2 продукта из списка:
+      = form_with id: 'form', method: :get, url: search_ajax_path do |form|
+        - product_array = Product.all.map {|prod| [prod.title, prod.id]}
+        = select_tag(:id_1, options_for_select(product_array), :class => 'browser-default custom-select')
+        %hr/
+        = select_tag(:id_2, options_for_select(product_array), :class => 'browser-default custom-select')
+        %hr/
+        = form.submit  'Отправить форму'
+
+  .container
+    .row
+      .col-md-12
+        %table#table.table.table-hover{:style => "display:none"}
+          %tr
+            %th Название
+            %th Время на работу
+            %th
+        #error.alert.alert-danger{:style => "display:none"}
+          %strong У нас нет таких рецептов нет)

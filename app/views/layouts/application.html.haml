@@ -1,0 +1,47 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ExamWork
+    = csrf_meta_tags
+    = csp_meta_tag
+    %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+  %body#page-center.bg-light
+    %nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      %h1.navbar-brand Студ-Кухня
+      - if current_user
+        %span.nav-link
+          Вы вошли как #{current_user.name}
+        %a.btn.btn-outline-secondary{:href => "/logout"}
+          %span Выйти
+      - else
+        %a.btn.btn-outline-secondary{:href => "/login"}
+          %span Войти
+        %a.btn.btn-outline-secondary{:href => "/singup"}
+          %span Регистрация
+      %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
+        %span.navbar-toggler-icon
+      .navbar-collapse.offcanvas-collapse
+        %ul.navbar-nav.mr-auto
+          %li.nav-item.active
+            %a#top-link{:href => "/#main"}
+              %span.nav-link Главная
+          %li.nav-item
+            %a#top-link{:href => "/search"}
+              %span.nav-link Поиск рецептов
+          %li.nav-item
+            %a#top-link{:href => "/all_recipe"}
+              %span.nav-link Все рецепты
+          %li.nav-item
+            %a#top-link{:href => "https://www.delivery-club.ru/entities/food"}
+              %span.nav-link Сегодня лень готовить
+          %li.nav-item
+            %a#contact-link{:href => "/#contact"}
+              %span.nav-link Связь со мной
+    = yield
+    %footer.footer
+      .container
+        %span.text-muted © Food4u. Designed by I.Kravtsov
+        %a{:href => "vanekkravtsov@mail.ru", :target => "_blank"} vanekkravtsov@mail.ru

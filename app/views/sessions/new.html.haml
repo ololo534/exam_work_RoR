@@ -1,0 +1,11 @@
+= form_tag  '/login', :class => "form-signin text-center" do
+  .text-center.mb-4
+    %h1.h3.mb-3.font-weight-normal Вход
+  .form-label-group
+    %label{:for => "username"}
+    %input#username.form-control{:name => "username", :placeholder => "username", :type => "text"}/
+  .form-label-group
+    %label{:for => "password"}
+    %input#password.form-control{:name => "password", :placeholder => "Пароль", :type => "password"}/
+  %input.btn.btn-lg.btn-primary.btn-block{"data-disable-with" => "Попытка входа", :name => "commit", :type => "submit", :value => "Войти"}/
+  %a{:href => "/signup"} Регистрация
