@@ -8,13 +8,12 @@
     %meta{:content => "width=device-width, initial-scale=1, shrink-to-fit=no", :name => "viewport"}/
     = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
     = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
-  %body#page-center.bg-light
+  %body#page-center
     .header
-      %nav.navbar.navbar-expand-md.navbar-dark.fixed-top.bg-dark
+      %nav.navbar.navbar-expand-md.fixed-top.navbar-dark.bg-dark
         %h1.navbar-brand Food4u
         - if current_user
-          %span.nav-link
-            Вы вошли как #{current_user.name}
+          %span.nav-link Вы вошли как #{current_user.name}
           %a.btn.btn-outline-secondary{:href => "/logout"}
             %span Выйти
         - else
@@ -41,7 +40,8 @@
             %li.nav-item
               %a#contact-link{:href => "/contact"}
                 %span.nav-link Связь со мной
-    = yield
+    .container
+      = yield
     %footer.footer
       .container
         %span.text-muted © Food4u. Designed by I.Kravtsov

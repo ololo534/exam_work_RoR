@@ -8,19 +8,16 @@ a:hover {
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus {
-  color: #333;
+  color: #fff;
   text-shadow: none; /* Prevent inheritance from `body` */
   background-color: #fff;
   border: .05rem solid #fff;
 }
 
-html,
 body {
-  height: 100%;
-  background-color: #333;
-}
-
-body {
+  width: 100%;
+  background: url("Slider_Background.jpg");
+  background-size: cover;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -81,16 +78,4 @@ body {
 .cover .btn-lg {
   padding: .75rem 1.25rem;
   font-weight: 700;
-}
-
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
 }
