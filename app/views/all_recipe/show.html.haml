@@ -1,26 +1,25 @@
 %main{:role => "main"}
-  %hr/
-  .jumbotron
+  .row
     .container
       %h1.display-3
         %strong Название:
         = @recipe.title
-  .container
-    .row
-      .col-md-3
-        %h2 Продукты
-        %p
-        %table.table
-          %tr
-            %th Продукты
-            %th Количество
-          - @product.each_with_index do |prod, i|
+    .container
+      .row
+        .col-md-3
+          %h2 Продукты
+          %p
+          %table.table
             %tr
-              %td
-                = prod.title
-              %td
-                = @specifications[i].count
-      .col-md-9
-        %h2 Что делать
-        %p= @recipe.text
-    %hr/
+              %th Продукты
+              %th Количество
+            - @product.each_with_index do |prod, i|
+              %tr
+                %td
+                  = prod.title
+                %td
+                  = @specifications[i].count
+        .col-md-9
+          %h2 Что делать
+          %p= @recipe.text
+      %hr/
