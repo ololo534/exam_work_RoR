@@ -40,6 +40,11 @@
             %li.nav-item
               %a#contact-link{:href => "/contact"}
                 %span.nav-link Связь со мной
+            %li.nav-item.dropdown
+              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"} Язык
+              .dropdown-menu{"aria-labelledby" => "dropdown01"}
+                %a.dropdown-item{:href => "#"} Русский
+                %a.dropdown-item{:href => "#"} Английский
     .container
       = yield
     %footer.footer

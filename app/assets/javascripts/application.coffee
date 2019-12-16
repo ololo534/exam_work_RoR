@@ -2,6 +2,7 @@
 #= require activestorage
 #= require_tree .
 #= require jquery
+#= require bootstrap
 $ ->
   'use strict'
   $('[data-toggle="offcanvas"]').on 'click', ->
