@@ -19,4 +19,13 @@ class AppTest < ActionDispatch::IntegrationTest
     assert (get '/login'), :success
     assert (get '/signup'), :success
   end
+
+  test 'должны получать страницу если прошли аутентификацию' do
+    post '/user', params: { user: { name: 'google',
+                                    email: 'google@google.com',
+                                    password: 'google',
+                                    password_confirmation: 'google' } }
+    assert_redirected_to '/main'
+    assert (get '/contact'), :success
+  end
 end

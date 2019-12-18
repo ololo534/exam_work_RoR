@@ -18,7 +18,7 @@ do ->
           $.each $JSON['solution'], ($NULL, $Value) ->
             $HTML += '<tr> <td>' + $Value.title + '</td>  ' +
               '<td>' + $Value.time_work + '</td> ' +
-                ' <td>' + '<a class="new_link" href="/all_recipe/' + $Value.id + '">More details</a>' + '</td> </tr>'
+                ' <td>' + '<a class="new_link" href="/all_recipe/' + $Value.id + '">Подробнее</a>' + '</td> </tr>'
             return
           $Table.show().append $HTML
           $Error.hide()
