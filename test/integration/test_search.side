@@ -1,0 +1,190 @@
+{
+  "id": "48fe4a88-dc0d-45ce-816b-622eb3f3a820",
+  "version": "2.0",
+  "name": "test_search",
+  "url": "http://0.0.0.0:3000",
+  "tests": [{
+    "id": "bb2bc03e-6acf-4b25-b540-95759dd3a84e",
+    "name": "test1",
+    "commands": [{
+      "id": "b5ae217b-1aa9-40bc-820a-284bede2b9b1",
+      "comment": "",
+      "command": "open",
+      "target": "/search",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6f8a03aa-bf14-45af-a827-183fa8042e59",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "927x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2165dd77-29bf-45aa-a29d-61a14d04dca5",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_1",
+      "targets": [],
+      "value": "label=Соус болоньезе"
+    }, {
+      "id": "50cdc0a9-a2dc-4aeb-ade8-cab06c5f5bd3",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=id_1",
+      "targets": [
+        ["id=id_1", "id"],
+        ["name=id_1", "name"],
+        ["css=#id_1", "css:finder"],
+        ["xpath=//select[@id='id_1']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Творог\nЯйцо куриное\nПшеничная мука\nСахар\nПодсолнечное масло\nМясной фарш\nСоус болоньезе\nСливочное масло\nОливковое масло\nМолоко\nГотовые листья лазаньи\nТвердый сыр\nСоль')]", "xpath:innerText"]
+      ],
+      "value": "-129.5,-476.703125"
+    }, {
+      "id": "ba374e9f-9f30-4223-818f-b193f7111bec",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=id_1",
+      "targets": [
+        ["id=id_1", "id"],
+        ["name=id_1", "name"],
+        ["css=#id_1", "css:finder"],
+        ["xpath=//select[@id='id_1']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Творог\nЯйцо куриное\nПшеничная мука\nСахар\nПодсолнечное масло\nМясной фарш\nСоус болоньезе\nСливочное масло\nОливковое масло\nМолоко\nГотовые листья лазаньи\nТвердый сыр\nСоль')]", "xpath:innerText"]
+      ],
+      "value": "-129.5,-476.703125"
+    }, {
+      "id": "06a797b6-9e3b-4dba-af39-68d16ffe39e0",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=id_1",
+      "targets": [
+        ["id=id_1", "id"],
+        ["name=id_1", "name"],
+        ["css=#id_1", "css:finder"],
+        ["xpath=//select[@id='id_1']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Творог\nЯйцо куриное\nПшеничная мука\nСахар\nПодсолнечное масло\nМясной фарш\nСоус болоньезе\nСливочное масло\nОливковое масло\nМолоко\nГотовые листья лазаньи\nТвердый сыр\nСоль')]", "xpath:innerText"]
+      ],
+      "value": "-129.5,-476.703125"
+    }, {
+      "id": "7840f30e-0677-4b67-8b07-8ac0e31b18cd",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_1",
+      "targets": [
+        ["id=id_1", "id"],
+        ["name=id_1", "name"],
+        ["css=#id_1", "css:finder"],
+        ["xpath=//select[@id='id_1']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"],
+        ["xpath=//select[contains(.,'Творог\nЯйцо куриное\nПшеничная мука\nСахар\nПодсолнечное масло\nМясной фарш\nСоус болоньезе\nСливочное масло\nОливковое масло\nМолоко\nГотовые листья лазаньи\nТвердый сыр\nСоль')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1802579a-31a6-4cd0-90fc-5cef5a7ece8f",
+      "comment": "",
+      "command": "select",
+      "target": "id=id_2",
+      "targets": [],
+      "value": "label=Мясной фарш"
+    }, {
+      "id": "8a6e6976-2eec-4409-9497-be58a5c400ce",
+      "comment": "",
+      "command": "mouseDownAt",
+      "target": "id=id_2",
+      "targets": [
+        ["id=id_2", "id"],
+        ["name=id_2", "name"],
+        ["css=#id_2", "css:finder"],
+        ["xpath=//select[@id='id_2']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": "-129.5,-547.703125"
+    }, {
+      "id": "881dfd6c-c443-4430-9289-0d7429b2ffd9",
+      "comment": "",
+      "command": "mouseMoveAt",
+      "target": "id=id_2",
+      "targets": [
+        ["id=id_2", "id"],
+        ["name=id_2", "name"],
+        ["css=#id_2", "css:finder"],
+        ["xpath=//select[@id='id_2']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": "-129.5,-547.703125"
+    }, {
+      "id": "75d5ff22-9ece-4a8b-a5af-27f59e79040b",
+      "comment": "",
+      "command": "mouseUpAt",
+      "target": "id=id_2",
+      "targets": [
+        ["id=id_2", "id"],
+        ["name=id_2", "name"],
+        ["css=#id_2", "css:finder"],
+        ["xpath=//select[@id='id_2']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": "-129.5,-547.703125"
+    }, {
+      "id": "94a086cf-f0b3-462f-bab3-14593ac9aaf2",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_2",
+      "targets": [
+        ["id=id_2", "id"],
+        ["name=id_2", "name"],
+        ["css=#id_2", "css:finder"],
+        ["xpath=//select[@id='id_2']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/select[2]", "xpath:idRelative"],
+        ["xpath=//select[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a009af26-228b-4793-81f6-dea27428da89",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn-lg", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//form[@id='form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "284afe3f-5f68-485f-bf97-409fdb1322c1",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='table']/tbody/tr[2]/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Лазанья классическая')]", "xpath:innerText"]
+      ],
+      "value": "Лазанья классическая"
+    }]
+  }],
+  "suites": [{
+    "id": "4f3adfd9-e69a-4b98-afa1-7c7bb53a103a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["bb2bc03e-6acf-4b25-b540-95759dd3a84e"]
+  }],
+  "urls": ["http://0.0.0.0:3000/"],
+  "plugins": []
+}

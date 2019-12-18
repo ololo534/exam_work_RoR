@@ -1,4 +1,4 @@
 class Specification < ApplicationRecord
-  has_many :recipes
-  has_many :products
+  belongs_to :recipe
+  belongs_to :product
 end

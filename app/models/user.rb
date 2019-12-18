@@ -3,7 +3,7 @@ class User < ApplicationRecord
   validates :name,
             presence: true,
             uniqueness: true,
-            format: { with: /\A[a-z]+\z/ }
+            format: { with: /\A[a-zA-Z0-9._%+-]+\z/ }
   validates :email,
             presence: true,
             uniqueness: true,

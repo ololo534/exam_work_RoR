@@ -10,7 +10,7 @@ do ->
       $HTML = ''
       $Table.find('tr:not(:first)').remove()
       $.get 'search/ajax.json', $Form.serialize(), ($JSON) ->
-        if $JSON['solution'][0] == 0
+        if $JSON['solution'].length == 0
           $Table.hide()
           $Error.show()
         else

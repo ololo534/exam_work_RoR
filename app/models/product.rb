@@ -1,3 +1,3 @@
 class Product < ApplicationRecord
-  belongs_to :specification
+  has_many :specifications
 end
