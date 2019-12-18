@@ -1,14 +1,16 @@
 = form_for :user, url: '/user' do |f|
-  %h1 Быстрая регистрация
+  %h1
+    = t('navbar.singup')
   %label{:for => "user_name"}
-  %input#user_name{:name => "user[name]", :placeholder => "Имя пользователя", :type => "text"}/
+  %input#user_name{:name => "user[name]", :placeholder => t('username'), :type => "text"}/
   %label{:for => "user_email"}
   %input#user_email{:name => "user[email]", :placeholder => "e-mail", :type => "text"}/
   %label{:for => "user_password"}
-  %input#user_password{:name => "user[password]", :placeholder => "Пароль", :type => "password"}/
+  %input#user_password{:name => "user[password]", :placeholder => t('password'), :type => "password"}/
   %label{:for => "user_password_confirmation"}
-  %input#user_password_confirmation{:name => "user[password_confirmation]", :placeholder => "Подтверждение пароля", :type => "password"}/
-  %input.btn.btn-primary{"data-disable-with" => "Попытка регистрации", :name => "commit", :type => "submit", :value => "Зарегистрироваться"}/
+  %input#user_password_confirmation{:name => "user[password_confirmation]", :placeholder => t('password_conf'), :type => "password"}/
+  %input.btn.btn-primary{"data-disable-with" => t('sing_attempt'), :name => "commit", :type => "submit", :value => t('sing_up')}/
   %br/
   %br/
-  %a{:href => "/login"} Назад
+  %a{:href => "/login"}
+    = t('back')

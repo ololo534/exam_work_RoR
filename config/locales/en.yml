@@ -1,33 +1,37 @@
-# Files in the config/locales directory are used for internationalization
-# and are automatically loaded by Rails. If you want to use locales other
-# than English, add the necessary files in this directory.
-#
-# To use the locales, use `I18n.t`:
-#
-#     I18n.t 'hello'
-#
-# In views, this is aliased to just `t`:
-#
-#     <%= t('hello') %>
-#
-# To use a different locale, set it with `I18n.locale`:
-#
-#     I18n.locale = :es
-#
-# This would use the information in config/locales/es.yml.
-#
-# The following keys must be escaped otherwise they will not be retrieved by
-# the default I18n backend:
-#
-# true, false, on, off, yes, no
-#
-# Instead, surround them with single quotes.
-#
-# en:
-#   'true': 'foo'
-#
-# To learn more, please read the Rails Internationalization guide
-# available at http://guides.rubyonrails.org/i18n.html.
-
 en:
-  hello: "Hello world"
+  back: 'Back'
+  username: 'User name'
+  password: 'Password'
+  password_conf: 'Confirm the password'
+  login_attempt: 'Login attempt'
+  sing_attempt: 'Registration Attempt'
+  sing_up: 'Sing up'
+  navbar:
+    user: 'You are logged in as'
+    singin: 'Sing in'
+    singout: 'Go out'
+    singup: 'Registration'
+    item:
+      main: 'Main'
+      search: 'Recipe Search'
+      all_recipe: 'All recipe'
+      lazy: "Today I'm lazy"
+      contact: 'Contact with me'
+      lang: 'Language'
+  main:
+    main_text: 'This site will allow you to find a recipe based on the products you have. Choose the foods that are lying around in your refrigerator and get many easy recipes.'
+  search:
+    select_text: 'Select 2 products from the list:'
+    search: 'Search'
+    title: 'Title'
+    time: 'Time for work'
+    error: 'We do not have such recipes)'
+  all_recipe:
+    show:
+      title: 'Title:'
+      product: 'Products'
+      count: 'Count'
+      todo: 'What to do'
+    our_recipe: 'Our recipe'
+    text: 'On this page you can see the best recipes that we could find.'
+    more: 'More details'

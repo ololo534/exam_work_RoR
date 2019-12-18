@@ -3,7 +3,9 @@
     %header.masthead.mb-auto
     %main.inner.cover{:role => "main"}
       %h1.cover-heading Food4u
-      %p.lead Этот сайт позволит Вам найти рецепт блюда исходя из имеющихся у вас продуктов. Выберите те продукты, которые завалялись у вас в холодильнике и получите много легких рецептов.
       %p.lead
-        %a.btn.btn-lg.btn-secondary{:href => "/search"} Поиск рецептов
+        = t('main.main_text')
+      %p.lead
+        %a.btn.btn-lg.btn-secondary{:href => "/search"}
+          = t('navbar.item.search')
     .shadow

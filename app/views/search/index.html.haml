@@ -1,21 +1,25 @@
 %main{:role => "main"}
   .container
-    %h1.display-3 Выберите 2 продукта из списка:
+    %h1.display-3
+      = t('search.select_text')
     = form_with id: 'form', method: :get, url: search_ajax_path do |form|
       - product_array = Product.all.map {|prod| [prod.title, prod.id]}
       = select_tag(:id_1, options_for_select(product_array), :class => 'browser-default custom-select')
       %hr/
       = select_tag(:id_2, options_for_select(product_array), :class => 'browser-default custom-select')
       %hr/
-      = form.submit  'Поиск', :class => 'btn btn-lg btn-secondary'
+      = form.submit  t('search.search'), :class => 'btn btn-lg btn-secondary'
       %hr/
   .container
     .row
       .col-md-12
         %table#table.table{:style => "display:none"}
           %tr
-            %th Название
-            %th Время на работу
+            %th
+              = t('search.title')
+            %th
+              = t('search.time')
             %th
         #error.alert.alert-danger{:style => "display:none"}
-          %strong У нас нет таких рецептов нет)
+          %strong
+            = t('search.error')

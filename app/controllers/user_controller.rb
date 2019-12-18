@@ -8,6 +8,7 @@ class UserController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/main'
     else
+      flash[:alert] = 'invalid data'
       redirect_to '/signup'
     end
   end

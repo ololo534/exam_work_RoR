@@ -1,19 +1,22 @@
 %main{:role => "main"}
   / Main jumbotron for a primary marketing message or call to action
   .container
-    %h1.display-3 Наши рецепты
-    %p На этой странице вы можете увидеть самые лучшие рецепты, которые мы смогли найти
+    %h1.display-3
+      = t('all_recipe.our_recipe')
+    %p
+      = t('all_recipe.text')
     .row
       .col-md-12
         %table.table
           %tr
-            %th Название
-            %th Время на работу
+            %th
+              = t('search.title')
+            %th
+              = t('search.time')
             %th
           - @recipes.each do |recipe|
             %tr
               %td= recipe.title
               %td= recipe.time_work
-              %td= link_to 'Подробнее', all_recipe_path(recipe)
+              %td= link_to 'More detail', all_recipe_path(recipe)
       %hr/
-    / /container

@@ -13,38 +13,49 @@
       %nav.navbar.navbar-expand-md.fixed-top.navbar-dark.bg-dark
         %h1.navbar-brand Food4u
         - if current_user
-          %span.nav-link Вы вошли как #{current_user.name}
+          %span.nav-link
+            = t('navbar.user')
+            #{current_user.name}
           %a.btn.btn-outline-secondary{:href => "/logout"}
-            %span Выйти
+            %span
+              = t('navbar.singout')
         - else
           %a.btn.btn-outline-secondary{:href => "/login"}
-            %span Войти
+            %span
+              = t('navbar.singin')
           %a.btn.btn-outline-secondary{:href => "/signup"}
-            %span Регистрация
+            %span
+              = t('navbar.singup')
         %button.navbar-toggler.p-0.border-0{"data-toggle" => "offcanvas", :type => "button"}
           %span.navbar-toggler-icon
         .navbar-collapse.offcanvas-collapse
           %ul.navbar-nav.mr-auto
             %li.nav-item.active
               %a#top-link{:href => "/#main"}
-                %span.nav-link Главная
+                %span.nav-link
+                  = t('navbar.item.main')
             %li.nav-item
               %a#top-link{:href => "/search"}
-                %span.nav-link Поиск рецептов
+                %span.nav-link
+                  = t('navbar.item.search')
             %li.nav-item
               %a#top-link{:href => "/all_recipe"}
-                %span.nav-link Все рецепты
+                %span.nav-link
+                  = t('navbar.item.all_recipe')
             %li.nav-item
               %a#top-link{:href => "https://www.delivery-club.ru/entities/food"}
-                %span.nav-link Сегодня лень готовить
+                %span.nav-link
+                  = t('navbar.item.lazy')
             %li.nav-item
               %a#contact-link{:href => "/contact"}
-                %span.nav-link Связь со мной
+                %span.nav-link
+                  = t('navbar.item.contact')
             %li.nav-item.dropdown
-              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"} Язык
+              %a#dropdown01.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown"}
+                = t('navbar.item.lang')
               .dropdown-menu{"aria-labelledby" => "dropdown01"}
-                %a.dropdown-item{:href => "#"} Русский
-                %a.dropdown-item{:href => "#"} Английский
+                %a.dropdown-item{:href => "?locale=en"} English
+                %a.dropdown-item{:href => "?locale=ru"} Русский
     .container
       = yield
     %footer.footer
