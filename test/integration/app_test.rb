@@ -20,7 +20,7 @@ class AppTest < ActionDispatch::IntegrationTest
     assert (get '/signup'), :success
   end
 
-  test 'должны получать страницу если прошли аутентификацию' do
+  test 'should get page contact if sing up' do
     post '/user', params: { user: { name: 'google',
                                     email: 'google@google.com',
                                     password: 'google',
