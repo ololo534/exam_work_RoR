@@ -10,11 +10,11 @@ do ->
       $HTML = ''
       $Table.find('tr:not(:first)').remove()
       $.get 'search/ajax.json', $Form.serialize(), ($JSON) ->
+        console.log $JSON['solution']
         if $JSON['solution'].length == 0
           $Table.hide()
           $Error.show()
         else
-          console.log $JSON['solution']
           $.each $JSON['solution'], ($NULL, $Value) ->
             $HTML += '<tr> <td>' + $Value.title + '</td>  ' +
               '<td>' + $Value.time_work + '</td> ' +

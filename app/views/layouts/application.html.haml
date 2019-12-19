@@ -31,19 +31,19 @@
         .navbar-collapse.offcanvas-collapse
           %ul.navbar-nav.mr-auto
             %li.nav-item.active
-              %a#top-link{:href => "/#main"}
+              %a{:href => "/#main"}
                 %span.nav-link
                   = t('navbar.item.main')
             %li.nav-item
-              %a#top-link{:href => "/search"}
+              %a{:href => "/search"}
                 %span.nav-link
                   = t('navbar.item.search')
             %li.nav-item
-              %a#top-link{:href => "/all_recipe"}
+              %a{:href => "/all_recipe"}
                 %span.nav-link
                   = t('navbar.item.all_recipe')
             %li.nav-item
-              %a#top-link{:href => "https://www.delivery-club.ru/entities/food"}
+              %a{:href => "https://www.delivery-club.ru/entities/food", :target => "_blank"}
                 %span.nav-link
                   = t('navbar.item.lazy')
             %li.nav-item
@@ -61,4 +61,4 @@
     %footer.footer
       .container
         %span.text-muted © Food4u. Designed by I.Kravtsov
-        %a{:href => "https://mail.ru", :target => "_blank"} vanekkravtsov@mail.ru
+        %a{:href => "mailto:vanekkravtsov@mail.ru"} vanekkravtsov@mail.ru
